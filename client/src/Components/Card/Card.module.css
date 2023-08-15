@@ -1,0 +1,51 @@
+.cardContainer {
+  background-color: rgba(190, 216, 216, 0);
+  margin: 0px;
+  border: solid black 1px;
+  border-radius: 20px;
+  position: relative;
+  height: 18rem;
+  width: 15rem;
+  overflow: hidden; /* Añadimos esto para recortar el contenido que se desborda */
+}
+
+.cardContainer:hover {
+  transform: scale(1.05);
+  background-color: rgba(56, 49, 49, 0.676);
+}
+
+.imgcard {
+  position: absolute;
+  top: 30%; /* Ajustamos la posición vertical de la imagen */
+  left: 50%; /* Ajustamos la posición horizontal de la imagen */
+  transform: translate(-50%, -50%) scale(2); /* Incrementamos el valor de escala para que la imagen se vea más grande */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  filter: grayscale(70%) blur(0.2px);
+  opacity: 0.7;
+  border-radius: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.info {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.627);
+  z-index: 100;
+}
+
+.cardContainer:hover .imgcard {
+  filter: grayscale(0) blur(0px);
+  opacity: 1;
+}
+
+.cardContainer:hover .info {
+  color: rgb(23, 25, 13);
+}

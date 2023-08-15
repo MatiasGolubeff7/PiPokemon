@@ -1,0 +1,25 @@
+.inputCreate {
+  margin-top: 30px;
+  height: 20px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.formCreate {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 20px;
+  font-weight: 600;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.34);
+  margin-left: 30%;
+  margin-top: 7rem;
+}
+
+.check {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}

@@ -1,0 +1,44 @@
+.cardsContainer {
+  line-height: 1em;
+  margin-top: 0;
+  margin-right: auto; /* Para centrar horizontalmente */
+  margin-left: auto; /* Para centrar horizontalmente */
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  /* background-color: rgb(85, 89, 69); */
+  top: 5vh;
+  height: 90vh;
+  width: 80vw;
+  /* background-image: url("../../assets/cards.png"); */
+}
+
+.pokeCards {
+  position: relative; /* Agregamos posicionamiento relativo para que funcione el posicionamiento absoluto del elemento adicional */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.8rem;
+  justify-content: center;
+  align-content: start;
+  margin: 0px;
+  max-width: 80vw;
+  overflow: hidden;
+  /* background-image: url("../../assets/Cards/FondoCards.png"); Reemplaza "ruta-de-tu-imagen.jpg" con la ruta de tu imagen de fondo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px; /* Opcional: Añade padding para que las cards no queden pegadas al borde del contenedor */
+}
+
+/* Agregamos un elemento adicional para superponer y hacer la imagen de fondo más opaca */
+.pokeCards::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pokeCards :nth-last-child(-n + 4) {
+  margin-bottom: 20px; /* Puedes ajustar el tamaño del margen según tus necesidades */
+}

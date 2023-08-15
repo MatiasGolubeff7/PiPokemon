@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.leftButtons {
+  display: flex;
+  align-items: center;
+}
+
+.rightButtons {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-color: #2c3e50; /* Cambia al color gris oscuro deseado */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 2px; /* Ajusta el margen vertical aquí */
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.clearButton {
+  background-color: #ff4655;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 2px; /* Ajusta el margen vertical aquí */
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.createButton {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 2px; /* Ajusta el margen vertical aquí */
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Resto de los estilos ... */

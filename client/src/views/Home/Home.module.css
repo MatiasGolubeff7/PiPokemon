@@ -1,0 +1,43 @@
+/* Home.module.css */
+
+.homeContainer {
+  background-image: url("../../assets/Home/home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Resto de los estilos... */
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  background-color: #e2dfdf;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.searchInput {
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.searchButton {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+}
