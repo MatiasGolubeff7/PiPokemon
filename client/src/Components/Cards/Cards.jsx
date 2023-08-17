@@ -6,7 +6,7 @@ const Cards = ({ allPokemons }) => {
   return (
     <div className={style.cardsContainer}>
       <div className={style.pokeCards}>
-        {allPokemons.map((pokemon) => (
+        {allPokemons?.map((pokemon) => (
           <Card
             key={pokemon.id}
             id={pokemon.id}

@@ -50,6 +50,8 @@
 }
 
 .leftSection {
+  margin: 0 auto;
+  padding: 0px;
   display: flex;
   flex-direction: initial;
   text-align: left;

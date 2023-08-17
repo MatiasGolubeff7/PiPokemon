@@ -26,7 +26,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 50px; /* Opcional: Añade padding para que las cards no queden pegadas al borde del contenedor */
+  padding: 30px; /* Opcional: Añade padding para que las cards no queden pegadas al borde del contenedor */
 }
 
 /* Agregamos un elemento adicional para superponer y hacer la imagen de fondo más opaca */

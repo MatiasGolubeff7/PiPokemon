@@ -5,17 +5,5 @@ import rootReducer from "../reducer";
 
 export const store = createStore(
   rootReducer,
-  composeWithDevTools(applyMiddleware(thunk)) // middleware
+  composeWithDevTools(applyMiddleware(thunk)) // middleware trabajar con asincronia
 );
-
-// import reducer from "../reducer/index";
-
-// import { createStore, applyMiddleware, compose } from "redux";
-// import thunk from "redux-thunk";
-
-// const composeEnhancers = window.REDUX_DEVTOOLS_EXTENSION_COMPOSE || compose;
-
-// export const store = createStore(
-//   reducer,
-//   composeEnhancers(applyMiddleware(thunk))
-// );

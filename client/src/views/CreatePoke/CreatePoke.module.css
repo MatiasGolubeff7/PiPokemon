@@ -1,25 +1,107 @@
-.inputCreate {
-  margin-top: 30px;
-  height: 20px;
-  border-radius: 5px;
-  margin-left: 5px;
+/* CreatePoke.module.css */
+
+.createContainer {
+  background-image: url("../../assets/Create/CREATE.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .formCreate {
+  background-color: rgba(0, 0, 0, 0.392);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
   display: flex;
-  flex-direction: column;
-  width: 40%;
-  padding: 20px;
-  font-weight: 600;
-  border: 2px solid rgba(0, 0, 0, 0);
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0.34);
-  margin-left: 30%;
-  margin-top: 7rem;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  gap: 10px; /* Espacio entre los elementos */
+  align-items: center; /* Centra los elementos horizontalmente */
+  margin: 0 auto; /* Centra el formulario en la pantalla */
+  position: relative;
+}
+
+.inputCreate {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.errorsValidate {
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(255, 4, 4, 0.777);
+  margin-left: 10px; /* Agrega un margen a la izquierda para separar el mensaje */
 }
 
 .check {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.check > div {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente */
+  padding: 0;
+  margin: 0;
+  width: calc(
+    40% - 100px
+  ); /* Distribuye en 3 columnas con margen entre ellas */
+  margin-bottom: 5px;
+}
+
+.check label {
+  margin-right: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.check input {
+  margin-right: 5px;
+}
+
+.buttonHome {
+  background-color: #7c0000d2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.buttonHome:hover {
+  background-color: #ff0000db;
+  transform: scale(1.05);
+}
+
+.buttonCrear {
+  background-color: #0f6600c9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.buttonCrear:hover {
+  background-color: #5bc200db;
+  transform: scale(1.05);
+}
+
+.finals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
 }

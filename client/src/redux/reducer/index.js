@@ -53,7 +53,7 @@ function rootReducer(state = initialState, action) {
       if (action.payload === "all") {
         return {
           ...state,
-          allPokemons: state.pokemonCopy, //pokemonCopy
+          allPokemons: state.pokemonCopy,
           filter: action.payload,
         };
       } else {
@@ -70,11 +70,9 @@ function rootReducer(state = initialState, action) {
       if (action.payload === "aToZ") {
         return {
           ...state,
-          pokemonCopy: state.pokemonCopy
-            // .filter((pokemon) =>
-            //   state.allPokemons.find((p) => p.name === pokemon.name)
-            // ) // Filtrar por tipo
-            .sort((a, b) => a.name.localeCompare(b.name)), // Ordenar alfabéticamente
+          pokemonCopy: state.pokemonCopy.sort((a, b) =>
+            a.name.localeCompare(b.name)
+          ),
         };
       }
       if (action.payload === "zToA") {

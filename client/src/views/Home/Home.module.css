@@ -18,6 +18,7 @@
 
 .searchForm {
   display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #e2dfdf;
   border-radius: 8px;

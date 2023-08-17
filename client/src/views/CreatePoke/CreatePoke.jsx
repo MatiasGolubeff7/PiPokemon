@@ -95,17 +95,21 @@ function CreatePoke() {
   }, [input]);
 
   return (
-    <div>
+    <div className={style.createContainer}>
       <form onSubmit={handleSubmit} className={style.formCreate}>
         <div>
-          <label> Name</label>
+          <label>Name</label>
           <input
             onChange={handleChange}
             value={input.name}
             name="name"
             className={style.inputCreate}
           />
-          {errors.name ? <label>{errors.name}</label> : <label>&nbsp;</label>}
+          {errors.name ? (
+            <label className={style.errorsValidate}>{errors.name}</label>
+          ) : (
+            <label>&nbsp;</label>
+          )}
         </div>
         <div>
           <label>Image URL</label>
@@ -115,11 +119,15 @@ function CreatePoke() {
             name="img"
             className={style.inputCreate}
           />
-          {errors.img ? <label>{errors.img}</label> : <label>&nbsp;</label>}
+          {errors.img ? (
+            <label className={style.errorsValidate}>{errors.img}</label>
+          ) : (
+            <label>&nbsp;</label>
+          )}
         </div>
 
         <div>
-          <label> vida</label>
+          <label> Health</label>
           <input
             onChange={handleChange}
             value={input.health}
@@ -128,13 +136,13 @@ function CreatePoke() {
             className={style.inputCreate}
           />
           {errors.health ? (
-            <label>{errors.health}</label>
+            <label className={style.errorsValidate}>{errors.health}</label>
           ) : (
             <label>&nbsp;</label>
           )}
         </div>
         <div>
-          <label> velocidad</label>
+          <label> Speed</label>
           <input
             onChange={handleChange}
             value={input.speed}
@@ -142,10 +150,14 @@ function CreatePoke() {
             name="speed"
             className={style.inputCreate}
           />
-          {errors.speed ? <label>{errors.speed}</label> : <label>&nbsp;</label>}
+          {errors.speed ? (
+            <label className={style.errorsValidate}>{errors.speed}</label>
+          ) : (
+            <label>&nbsp;</label>
+          )}
         </div>
         <div>
-          <label> ataque</label>
+          <label> Attack</label>
           <input
             onChange={handleChange}
             value={input.attack}
@@ -154,13 +166,13 @@ function CreatePoke() {
             className={style.inputCreate}
           />
           {errors.attack ? (
-            <label>{errors.attack}</label>
+            <label className={style.errorsValidate}>{errors.attack}</label>
           ) : (
             <label>&nbsp;</label>
           )}
         </div>
         <div>
-          <label> Defensa</label>
+          <label> Defense</label>
           <input
             onChange={handleChange}
             value={input.defense}
@@ -169,13 +181,13 @@ function CreatePoke() {
             className={style.inputCreate}
           />
           {errors.defense ? (
-            <label>{errors.defense}</label>
+            <label className={style.errorsValidate}>{errors.defense}</label>
           ) : (
             <label>&nbsp;</label>
           )}
         </div>
         <div>
-          <label> altura</label>
+          <label> Height</label>
           <input
             onChange={handleChange}
             value={input.height}
@@ -184,13 +196,13 @@ function CreatePoke() {
             className={style.inputCreate}
           />
           {errors.height ? (
-            <label>{errors.height}</label>
+            <label className={style.errorsValidate}>{errors.height}</label>
           ) : (
             <label>&nbsp;</label>
           )}
         </div>
         <div>
-          <label> Peso</label>
+          <label> Weight</label>
           <input
             onChange={handleChange}
             value={input.weight}
@@ -199,14 +211,18 @@ function CreatePoke() {
             className={style.inputCreate}
           />
           {errors.weight ? (
-            <label>{errors.weight}</label>
+            <label className={style.errorsValidate}>{errors.weight}</label>
           ) : (
             <label>&nbsp;</label>
           )}
         </div>
         <div>
-          <label> Tipo:</label>
-          {errors.types ? <label>{errors.types}</label> : <label>&nbsp;</label>}
+          <label> Type:</label>
+          {errors.types ? (
+            <label className={style.errorsValidate}>{errors.types}</label>
+          ) : (
+            <label>&nbsp;</label>
+          )}
 
           <div className={style.check}>
             {types?.map((t) => {
@@ -223,15 +239,16 @@ function CreatePoke() {
             })}
           </div>
         </div>
-        <div>
+        <div className={style.finals}>
+          <Link to={`/home`}>
+            <button className={style.buttonHome}>HOME</button>
+          </Link>
           <input
+            className={style.buttonCrear}
             disabled={disabler || Object.entries(errors).length ? true : false}
-            value="Crear"
+            value="CREATE"
             type="submit"
           />
-          <Link to={`/home`}>
-            <button>Home</button>
-          </Link>
         </div>
       </form>
     </div>

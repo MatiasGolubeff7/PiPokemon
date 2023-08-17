@@ -7,6 +7,9 @@
 }
 
 .filterTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -29,7 +32,8 @@
   color: rgb(255, 255, 255);
   border: none;
   padding: 5px 10px;
-  border-radius: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 17px;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;

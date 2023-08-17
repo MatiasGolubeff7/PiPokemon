@@ -1,11 +1,9 @@
+/* Ordenator.module.css */
+
 .ordenatorContainer {
-  width: 50%;
-  margin: 20px auto; /* Alinea vertical y horizontalmente */
+  width: 40%;
+  margin: 10px auto;
   padding: 10px;
-  /* background-color: #f2f2f2; */
-  /* border-radius: 8px; */
-  /* border: 1px solid rgb(13, 183, 235); */
-  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,25 +12,35 @@
 
 .buttonGroup {
   display: flex;
-  gap: 5px; /* Reducir la distancia entre los botones */
+  gap: 5px;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
 
+.buttonGroup .button {
+  margin: 0 2px;
+}
+
 .button {
   background-color: #2350e291;
-  color: rgb(0, 0, 0);
-  border: none;
+  color: rgb(255, 255, 255);
   padding: 8px 16px;
-  border: 2px solid rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .button:hover {
-  background-color: #00000084;
+  background-color: #0d56a384;
   transform: scale(1.05);
+}
+
+/* Estilo para el botón seleccionado */
+.selected {
+  background-color: #052556c9;
+  color: #fff;
+  border: 1px solid #000000;
 }
